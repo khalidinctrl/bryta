@@ -1,0 +1,135 @@
+body{
+    background-color: #7373e8;
+    color: white;
+}
+
+#div1{
+    margin: auto;
+    width: 400px;
+    height: auto;
+    background-color: rgb(8, 8, 190);
+    border: solid black 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#div2{
+    color: black;
+    background-color: rgb(253, 242, 47);
+    border-radius: 10px;
+    padding: 0.5px;
+    text-align: center;
+}
+
+#div3{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.privilege{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px;
+}
+
+input{
+    width: 85%;
+    max-width: 1200px; 
+    margin-bottom: 2px;
+    margin-inline: auto;  /* keeps it centereed on both small and large devices*/
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#findVoucher{
+    height: 30px;
+    width: 90%;
+    max-width: 1200px; 
+    margin-inline: auto;  /* keeps it centered on both small and large devices*/
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 2px;
+    text-align: center;
+    background-color: rgb(249, 249, 60);
+}
+
+#loginButton{
+    width: 90%;
+    max-width: 1200px; 
+    margin-inline: auto;  /* keeps it centered on both small and large devices*/
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: linear-gradient(rgb(255, 183, 50), rgb(255, 255, 24));
+}
+
+#div4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.netInfo{
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-top: 9px;
+    padding: 5px;
+}
+
+#div5{
+    border: solid black 0.5px;
+    width: 85%;
+    max-width: 1200px; 
+    margin-inline: auto;  /* keeps it centereed on both small and large devices*/
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#amountDiv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#amountDiv div{
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#supportChart{
+    margin-bottom: 8px;
+}
+
+#mobileLogo{
+    height: 40px;
+    width: auto;
+    border-radius: 50px;
+    box-shadow: 1 1 5px;
+}
+
+#supportChart{
+    background-color: greenyellow;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}
