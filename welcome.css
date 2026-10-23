@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(33, 78, 255);
+}
+
+#wellDiv{
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    height: auto;
+    width: 400px;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: rgb(24, 24, 133);
+    color: white;
+}
+
+#p1{
+    color: rgb(255, 213, 3);
+    font-weight: 10rem;
+}
+
+#p2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin: auto;
+}
+
+#p3{
+    font-size: 20px;
+}
+
+#p4{
+    border: solid 1px;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#p5{
+    border: solid 1px;
+    border-radius: 5px;
+    background:linear-gradient(to left, rgb(248, 248, 146), yellow);
+    margin: 10px auto;
+    width: 80%;
+    padding: 15px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}

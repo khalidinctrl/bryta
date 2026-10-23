@@ -1,13 +1,24 @@
 body{
-    background-color: #7373e8;
+    background-color: #3737ef;
+    background-image: url(/images/pexels-darkside-photography-1243587808-36875810.jpg);
     color: white;
+}
+
+#line{
+    width: 50px;
+    height: 5px;
+    background-color: rgb(255, 230, 0);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    
 }
 
 #div1{
     margin: auto;
-    width: 400px;
+    width: 420px;
     height: auto;
-    background-color: rgb(8, 8, 190);
+    background: linear-gradient(to bottom, rgb(38, 38, 252), rgb(151, 151, 249));
     border: solid black 2px;
     border-radius: 10px;
     box-shadow: 0 0 5px;
@@ -19,13 +30,41 @@ h1{
     text-align: center;
 }
 
-#div2{
+.mode{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(171, 169, 169);
+}
+
+#div2 {
     color: black;
     background-color: rgb(253, 242, 47);
     border-radius: 10px;
-    padding: 0.5px;
+    padding: 8px 5px;
     text-align: center;
+    overflow: hidden;     /* Hides the text as it goes out of bounds */
+    position: relative;
+    white-space: nowrap;  /* Keeps the sentence on one single line */
 }
+
+/* Target the paragraph text inside the yellow div */
+#div2 p {
+    display: inline-block;
+    margin: 0;
+    /* Removed 'alternate' so it loops continuously in one direction */
+    animation: tickerLoop 15s linear infinite;
+}
+
+@keyframes tickerLoop {
+    0% {
+        transform: translateX(-100%); /* Starts completely hidden on the left */
+    }
+    100% {
+        transform: translateX(380px); /* Exits completely out to the right (matches box width) */
+    }
+}
+
 
 #div3{
     display: flex;
@@ -71,7 +110,7 @@ input{
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
-    background: linear-gradient(rgb(255, 183, 50), rgb(255, 255, 24));
+    background: linear-gradient(to right, rgb(255, 183, 50), rgb(255, 255, 24));
 }
 
 #div4{
@@ -82,14 +121,16 @@ input{
 }
 
 .netInfo{
-    border: solid black 1px;
+    border: none;
     border-radius: 10px;
     margin-top: 9px;
     padding: 5px;
+    box-shadow: 0 0 5px rgb(138, 125, 125);
 }
 
 #div5{
-    border: solid black 0.5px;
+    border: none;
+    box-shadow: 0 0 10px rgb(138, 125, 125);
     width: 85%;
     max-width: 1200px; 
     margin-inline: auto;  /* keeps it centereed on both small and large devices*/
@@ -104,10 +145,18 @@ input{
     justify-content: center;
 }
 
-#amountDiv div{
+#amountDiv button{
+    background-color: rgb(206, 206, 206);
     border: solid black 1px;
     border-radius: 5px;
     padding: 7px;
+    margin-top: 4px;
+}
+
+#amountDiv button:hover{
+    background-color: rgb(255, 255, 24);
+    padding: 13px;
+    transition: 0.3s;
 }
 
 #supportChart{
@@ -132,4 +181,12 @@ input{
     aside, section, article{
         width: 100%;
     }
+}
+
+/*Welcome page*/
+
+#wellDiv{
+    height: 200px;
+    width: 200px;
+    border: solid black;
 }
